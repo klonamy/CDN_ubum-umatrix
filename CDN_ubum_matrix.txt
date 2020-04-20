@@ -1,0 +1,67 @@
+! Version 0.0.1
+! Title KlonAmy CDN Allow List (uMatrix)
+! Expires 1 days (update frequency)
+
+! --------------------------General rules (1/2)-----------------------------!
+referrer-spoof: * true
+
+* * * block
+* * frame block
+* * script block
+* 1st-party * allow
+* 1st-party frame allow
+* 1st-party script allow
+
+! --------------------------General rules (2/2)-----------------------------!
+
+* ajax.googleapis.com * noop
+* ajax.aspnetcdn.com * noop
+* ajax.microsoft.com * noop
+* cdnjs.cloudflare.com * noop
+* code.jquery.com * noop
+* cdn.jsdelivr.net * noop
+* yastatic.net * noop
+* yandex.st * noop
+* apps.bdimg.com * noop
+* libs.baidu.com * noop
+* lib.sinaapp.com * noop
+* upcdn.b0.upaiyun.com * noop
+* cdn.bootcss.com * noop
+* sdn.geekzu.org * noop
+* ajax.proxy.ustclug.org * noop
+
+! --------------------------CDN?-----------------------------!
+* aolcdn.com * noop
+* vidible.tv * noop
+* aiv-cdn.net * noop
+* cdn.pushwoosh.com * noop
+* fsdn.com * noop
+* cursecdn.com * noop
+* tiqcdn.com * noop
+* gjcdn.net * noop
+* f-cdn.gamejolt.net * noop
+* static.twitchcdn.net * noop
+* cdn.slaask.com * noop
+* hb.vntsm.com * noop
+* cdn.wzb.lv * noop
+* licdn.com * noob
+
+! --------------------------YT/Video/Streaming-----------------------------!
+* twitch.tv * noob
+* yimg.com * noop
+* vimeo.com * noop
+* vimeocdn.com * noop
+
+! --------------------------Others-----------------------------!
+
+* cursetech.com * noop
+* creativecommons.org * noop
+* stripe.com * noop
+
+! --------------------------Recaptcha-----------------------------!
+* https://www.google.com/recaptcha/ * noop
+* https://www.gstatic.com/recaptcha/ * noop
+* https://www.google.com/recaptcha/ * noop
+
+! --------------------------Template-----------------------------!
+*  * noop
