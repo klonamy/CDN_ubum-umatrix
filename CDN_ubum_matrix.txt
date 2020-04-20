@@ -2,7 +2,6 @@
 ! Version: 0.0.1
 ! Title: KlonAmy CDN Allow List (uMatrix)
 
-! --------------------------General rules (1/2)-----------------------------!
 referrer-spoof: * true
 
 * * * block
@@ -11,57 +10,3 @@ referrer-spoof: * true
 * 1st-party * allow
 * 1st-party frame allow
 * 1st-party script allow
-
-! --------------------------General rules (2/2)-----------------------------!
-
-* ajax.googleapis.com * allow
-* ajax.aspnetcdn.com * allow
-* ajax.microsoft.com * allow
-* cdnjs.cloudflare.com * allow
-* code.jquery.com * allow
-* cdn.jsdelivr.net * allow
-* yastatic.net * allow
-* yandex.st * allow
-* apps.bdimg.com * allow
-* libs.baidu.com * allow
-* lib.sinaapp.com * allow
-* upcdn.b0.upaiyun.com * allow
-* cdn.bootcss.com * allow
-* sdn.geekzu.org * allow
-* ajax.proxy.ustclug.org * allow
-
-! --------------------------CDN?-----------------------------!
-* aolcdn.com * allow
-* vidible.tv * allow
-* aiv-cdn.net * allow
-* cdn.pushwoosh.com * allow
-* fsdn.com * allow
-* cursecdn.com * allow
-* tiqcdn.com * allow
-* gjcdn.net * allow
-* f-cdn.gamejolt.net * allow
-* static.twitchcdn.net * allow
-* cdn.slaask.com * allow
-* hb.vntsm.com * allow
-* cdn.wzb.lv * allow
-* licdn.com * noob
-
-! --------------------------YT/Video/Streaming-----------------------------!
-* twitch.tv * noob
-* yimg.com * allow
-* vimeo.com * allow
-* vimeocdn.com * allow
-
-! --------------------------Others-----------------------------!
-
-* cursetech.com * allow
-* creativecommons.org * allow
-* stripe.com * allow
-
-! --------------------------Recaptcha-----------------------------!
-* https://www.google.com/recaptcha/ * allow
-* https://www.gstatic.com/recaptcha/ * allow
-* https://www.google.com/recaptcha/ * allow
-
-! --------------------------Template-----------------------------!
-*  * allow
